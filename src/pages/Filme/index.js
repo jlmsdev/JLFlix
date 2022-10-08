@@ -28,6 +28,7 @@ function Filme() {
             })
             .then((response)=>{
                 setDetalhe(response.data);
+                console.log(response.data);
                 setLoading(false);
             })
             .catch(()=>{
@@ -103,6 +104,8 @@ function Filme() {
             <h3>Sinopse</h3>
             <span className="detalheFilme">{detalhe.overview}</span>
             <strong className="avaliacao">Avaliação Popular : {detalhe.vote_average.toFixed(2)} / 10</strong>
+            <strong className="avaliacao">Lançamento do Filme : {detalhe.release_date}</strong>
+            
 
             <div className="containerButton">
                 <button onClick={salvarFilme}>Salvar Filme</button>
