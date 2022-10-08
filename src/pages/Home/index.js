@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 import ScrollReveal from 'scrollreveal';
-import { toast } from 'react-toastify';
 
 import api from '../../services/api';
 import './home.css';
