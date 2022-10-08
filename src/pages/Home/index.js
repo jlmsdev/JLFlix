@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 import ScrollReveal from 'scrollreveal';
+import Rodape from '../../components/Rodape';
 
 import api from '../../services/api';
 import './home.css';
@@ -57,20 +58,24 @@ function Home() {
 
 
     return(
-        <div className='container'>
-            <div className='listaFilmes'>
-                <h1 className='title-page'>Veja os Filmes Recentes em Cartaz!</h1>
-                {filmes.map((filme) => {
-                    return(
-                            <article className='films' key={filme.id}>
-                                <strong>{filme.title}</strong>
-                                <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
-                                <Link to={`/filme/${filme.id}`}>Acessar Filme</Link>
-                            </article>                     
-                    )
-                })}
+        <>
+            <div className='container'>
+                <div className='listaFilmes'>
+                    <h1 className='title-page'>Veja os Filmes Recentes em Cartaz!</h1>
+                    {filmes.map((filme) => {
+                        return(
+                                <article className='films' key={filme.id}>
+                                    <strong>{filme.title}</strong>
+                                    <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
+                                    <Link to={`/filme/${filme.id}`}>Acessar Filme</Link>
+                                </article>                     
+                        )
+                    })}
+                </div>
             </div>
-        </div>
+
+            <Rodape />
+        </>
     );
 }
 

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .listaFilmes {
     max-width: 800px;
     margin: 2rem auto;
