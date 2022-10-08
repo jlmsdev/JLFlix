@@ -2,14 +2,18 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 import ScrollReveal from 'scrollreveal';
+import { toast } from 'react-toastify';
 
 import api from '../../services/api';
 import './home.css';
 
 
+
 function Home() {
     const [filmes, setFilmes] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    
 
     let slideUp = {
         distance: '400%',
@@ -56,7 +60,7 @@ function Home() {
     return(
         <div className='container'>
             <div className='listaFilmes'>
-                <h1 className='title-page'>Veja os Filmes em Cartaz!</h1>
+                <h1 className='title-page'>Veja os Filmes Recentes em Cartaz!</h1>
                 {filmes.map((filme) => {
                     return(
                             <article className='films' key={filme.id}>
