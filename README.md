@@ -1,6 +1,6 @@
 # App JL Flix, Filmes em Cartaz
 
-# Link Deploy [App JL Flix](https://github.com/facebook/create-react-app).
+# Link Deploy [App JL Flix](https://jlflix.netlify.app/).
 
 ## Tecnlogias Usadas 
 
