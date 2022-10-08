@@ -1,0 +1,110 @@
+.loading {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filmeInfo {
+    max-width: 800px;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    background-color: #252525;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filmeInfo h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.filmeInfo small {
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.filmeInfo img {
+    max-width: 800px;
+    height: 350px;
+    object-fit: cover;
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.filmeInfo h3 {
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.filmeInfo .detalheFilme {
+    text-align: justify;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.avaliacao {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.containerButton {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.containerButton button {
+    margin-right: 1rem;
+    border: 0;
+    padding: .5rem  1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #252525;
+    color: #FFF;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.containerButton button:hover {
+    border: 1px solid #FFF;
+    background-color: #FFF;
+    color: #252525;
+}
+
+.containerButton a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid #FFF;
+    padding: .5rem  1rem;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.containerButton a:hover {
+    background-color: #fff;
+    color: #252525;
+}
